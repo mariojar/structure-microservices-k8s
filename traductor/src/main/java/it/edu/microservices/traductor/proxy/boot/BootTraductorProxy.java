@@ -16,18 +16,21 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Import;
 import org.springframework.core.env.AbstractEnvironment;
 
+import it.edu.microservices.traductor.proxy.configuration.BeanConfiguration;
 import it.edu.microservices.traductor.proxy.utils.UtilHelper;
-import it.edu.microservices.traductor.proxy.version.QuoteEngineVersion;
+import it.edu.microservices.traductor.proxy.version.TraductorProxyVersion;
 
 
 
 
 @SpringBootApplication
 @ComponentScan(basePackageClasses = {
-									 QuoteEngineVersion.class,
+									 TraductorProxyVersion.class,
 									 })
+@Import({BeanConfiguration.class})
 @EnableAutoConfiguration
 public class BootTraductorProxy implements ApplicationContextAware {
 	

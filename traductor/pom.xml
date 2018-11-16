@@ -19,7 +19,7 @@
 
 	<properties>
 		<start-class>it.edu.microservices.traductor.proxy.boot.BootTraductorProxy</start-class>
-		<path.docker.microservices>docker/</path.docker.microservices>
+		<path.docker.microservices>src/main/resources/docker/</path.docker.microservices>
 		<spring-cloud.version>Finchley.M9</spring-cloud.version>
 		<docker.image.prefix>microservices-study</docker.image.prefix>
 	</properties>

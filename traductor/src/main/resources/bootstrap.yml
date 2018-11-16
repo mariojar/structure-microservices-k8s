@@ -1,6 +1,6 @@
 spring:
   application:
-    name: quote-engine
+    name: traductor-proxy
   cloud:
     kubernetes: 
       reload: 

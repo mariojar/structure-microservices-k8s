@@ -31,8 +31,8 @@ import it.edu.microservices.traductor.proxy.utils.UtilHelper;
 
 @RefreshScope
 @RestController
-@RequestMapping(path = "/quote-engine/version", consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-public class QuoteEngineVersion {
+@RequestMapping(path = "/traductor-proxy/version", consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+public class TraductorProxyVersion {
 	
 	private final static Logger LOGGER = LogManager.getLogger();
 	

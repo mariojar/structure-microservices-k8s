@@ -3,7 +3,7 @@
 # --------------------------------
 
 configuration:
-  greeting: Hello World QuoteEngine. Local Configuration
+  greeting: Hello World Proxy Traductor Local
 server:  
   port: 8083
 
