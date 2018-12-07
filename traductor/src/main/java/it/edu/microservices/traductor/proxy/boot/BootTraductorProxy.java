@@ -4,8 +4,8 @@ import java.util.Properties;
 
 import javax.annotation.PostConstruct;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -34,13 +34,13 @@ import it.edu.microservices.traductor.proxy.version.TraductorProxyVersion;
 @EnableAutoConfiguration
 public class BootTraductorProxy implements ApplicationContextAware {
 	
-	private final static Logger LOGGER = LogManager.getLogger();
+	private final static Logger LOGGER = LogManager.getLogger(BootTraductorProxy.class);
 	
 	@Autowired
 	@Qualifier("versionProperties") 
 	Properties versionProperties;
 	
-	@Value("${spring.application.name}")
+	@Value("${spring.application.name:temporalNameNotEncontre}")
 	private String appName;
 	
 	

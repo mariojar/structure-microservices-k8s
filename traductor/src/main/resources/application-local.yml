@@ -5,7 +5,7 @@
 configuration:
   greeting: Hello World Proxy Traductor Local
 server:  
-  port: 8083
+  port: 8080
 
 # --------------------------------  
 # DATABASE CONFIGURATION  
@@ -86,7 +86,7 @@ ribbon:
 logging:  
 #  file: logs/${spring.application.name}.log
   level:
-#    root: DEBUG
+    root: DEBUG
     org.hibernate: INFO
    # com.netflix.discovery: 'ON'
     #org.springframework.cloud: 'DEBUG'
